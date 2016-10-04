@@ -1,0 +1,58 @@
+
+<html>
+<head>
+	<title>Multi-platform Information Dissemination</title>
+	<!-- <meta name="viewport" content="width-device-width, inital-scale=1.0"> -->
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	
+	<!--<meta http-equiv="refresh" content="100">-->
+
+	<link rel="stylesheet" type="text/css" href="css/report.css">
+	</head>
+	<body>
+		<script language="javascript">
+		function Clickheretoprint()
+		{
+			var disp_setting="toolbar=yes,location=no,directories=yes,menubar=yes,"; 
+							disp_setting+="scrollbars=yes,width=700, height=400, left=100, top=25"; 
+			var content_vlue = document.getElementById("content").innerHTML; 
+
+			var docprint=window.open("","",disp_setting); 
+							docprint.document.open(); 
+							docprint.document.write('</head><body onLoad="self.print()" style="width: 700px; font-size:11px; font-family:arial; font-weight:normal;">');          
+							docprint.document.write(content_vlue); 
+							docprint.document.close(); 
+							docprint.focus(); 
+		}
+	</script>
+
+	<p align="right"><a id="addd" href="javascript:Clickheretoprint()"><input type="button" value="Print List"></a></p>
+	<div class="content" id="content">
+			<br>
+			<h1 align="center">Sample Direct Report</h1>
+			<br>
+			<br>
+			<hr>
+			<br>
+			<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr><td><b>Name</b>&nbsp;&nbsp;Roald Angelo J. Calopez</td></tr>
+				<tr><td><b>Address:</b>&nbsp;&nbsp;&nbsp;Ph6 Block47 Lot9 Mabuhay City Subdivision, Mamatid, Cabuyao, Laguna</td></tr>
+				<tr><td><b>Contact no.:</b>&nbsp;&nbsp; 09357843577</td></tr>
+				<tr><td><b>Email:</b>&nbsp;&nbsp;rajcalopez28@gmail.com</td></tr>
+			</table>
+			
+			<br><hr width="93%" align="center"><br>
+
+			<h2>Other details here. page under construction.</h2>
+<!--
+	<table width="90%" border="1" align="center" id="main">
+		<tr><th>ID</th><th>Name</th><th>Status</th><th>Time</th><th>Date</th></tr>
+		<tr><th>ID</th><th>Name</th><th>Status</th><th>Time</th><th>Date</td></tr>
+	</table>
+	-->	
+	</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>&nbsp;</title>
+		<!-- <meta name="viewport" content="width-device-width, inital-scale=1.0"> -->
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, IE-edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+		<!-- Main Theme -->
+		<link href="css/index.css" rel="stylesheet">
+		<!-- Bootstrap CSS Theme -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+		body { 
+			background: url('img/loginbg.jpg') no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.panel-default {
+			opacity: 0.9;
+			margin-top:30px;
+		}
+		.form-group.last {
+			margin-bottom:0px;
+		}
+		</style>
+		<script type="text/javascript">
+		function validateForm() {
+		    var x = document.forms["logForm"]["uname"].value;
+		    var y = document.forms["logForm"]["pword"].value;
+		    if (x != "user" || y != "pass") {
+		        alert("Username or Password is incorrect");
+		        document.getElementById('uname').value = "";
+		        document.getElementById('pword').value = "";
+		        return false;
+		    }
+		}
+		</script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+	</head>
+	<body>
+		<!-- div id="spinner"></div> -->
+
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<nav class="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+								<a class="navbar-brand" href="main.php"><b>Roald</b></a>
+								
+						</div>
+					</div> <!-- container-fluid -->
+				</nav> <!-- navigation -->
+			</div> <!-- container -->
+		</header>
+		<!--end of header-->
+
+		<br><br><br><br>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-7">
+					<div class="panel panel-default">
+						<div class="panel-heading"> <strong>Verification Login</strong>
+						</div>
+						<div class="panel-body">
+							<form name="logForm" class="form-horizontal" role="form" action="main.html" onsubmit="return validateForm()" method="POST">
+								<div class="form-group">
+									<label for="inputEmail3" class="col-sm-3 control-label">Username</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="uname" name="uname" placeholder="Username" onkeypress="return alpha(event)" required="" autofocus/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+									<div class="col-sm-9">
+										<input type="password" class="form-control" id="pword" name="pword" placeholder="Password" required="" onkeypress="return alpha(event)"/>
+									</div>
+								</div>
+								<div class="form-group last">
+									<div class="col-sm-offset-3 col-sm-9">
+										<button type="submit" class="btn btn-success btn-sm">Log in</button>
+										<button type="reset" class="btn btn-default btn-sm">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--<div class="panel-footer">	
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+							
+		<!-- footer -->
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Roald Calopez</p>
+			</div>
+		</div> 
+		<!-- end of footer-->
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+	</body>
+</html>

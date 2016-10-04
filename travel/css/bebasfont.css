@@ -1,0 +1,74 @@
+@font-face {
+   font-family: bebas;
+   src: url(../fonts/BebasNeue_Regular.otf);
+}
+
+@font-face {
+   font-family: bebas;
+   src: url(../fonts/BebasNeue_Regular.otf);
+   font-weight: bold;
+}
+
+.bebas {
+   font-family: bebas
+}
+
+@font-face {
+   font-family: bebasbold;
+   src: url(../fonts/BebasNeue_Bold.otf);
+}
+
+@font-face {
+   font-family: bebasbold;
+   src: url(../fonts/BebasNeue_Bold.otf);
+   font-weight: bold;
+}
+
+.bebasbold {
+   font-family: bebasbold
+}
+
+@font-face {
+   font-family: bebasbook;
+   src: url(../fonts/BebasNeue_Book.otf);
+}
+
+@font-face {
+   font-family: bebasbook;
+   src: url(../fonts/BebasNeue_Book.otf);
+   font-weight: bold;
+}
+
+.bebasbook {
+   font-family: bebasbook
+}
+
+@font-face {
+   font-family: bebaslight;
+   src: url(../fonts/BebasNeue_Light.otf);
+}
+
+@font-face {
+   font-family: bebaslight;
+   src: url(../fonts/BebasNeue_Light.otf);
+   font-weight: bold;
+}
+
+.bebaslight {
+   font-family: bebaslight
+}
+
+@font-face {
+   font-family: bebasthin;
+   src: url(../fonts/BebasNeue_Thin.otf);
+}
+
+@font-face {
+   font-family: bebasthin;
+   src: url(../fonts/BebasNeue_Thin.otf);
+   font-weight: bold;
+}
+
+.bebasthin {
+   font-family: bebasthin
+}
